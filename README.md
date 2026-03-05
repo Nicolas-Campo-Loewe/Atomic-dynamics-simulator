@@ -16,7 +16,7 @@ In addition, covalent interactions may result in single, double, or triple bonds
 
 The physical behavior of atoms and the chemical rules governing bonding are implemented separately in the project, to keep the system modular and easy to modify. Key parameters and rules can also be customized in their corresponding files: `physics.py`, `chemistry.py`. This structure allows users to experiment with different modeled scenarios.
 ```python
-#*physics.py*
+#physics.py
 DEFAULT_TEMPERATURE = 1.0
 TIME_STEP = 0.2
 MAX_SPEED = 9.5
@@ -40,7 +40,6 @@ DIPOLE_VISUAL_SCALE = 18.0
 WORLD_WIDTH = 800
 WORLD_HEIGHT = 800
 ```
-<br><br>
 
 ## How to Run
 
