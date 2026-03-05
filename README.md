@@ -16,34 +16,30 @@ In addition, covalent interactions may result in single, double, or triple bonds
 
 The physical behavior of atoms and the chemical rules governing bonding are implemented separately in the project, to keep the system modular and easy to modify. Key parameters and rules can also be customized in their corresponding files: `physics.py`, `chemistry.py`. This structure allows users to experiment with different modeled scenarios.
 ```python
-# Simulation parameters
+#`physics.py`
 DEFAULT_TEMPERATURE = 1.0
 TIME_STEP = 0.2
 MAX_SPEED = 9.5
 
-# Thermostat / Langevin dynamics
 THERMOSTAT_STRENGTH = 0.02
 LANGEVIN_GAMMA = 0.04       
 
-# Non-bonded interactions
 NONBONDED_REPULSION = 140.0
 NONBONDED_SOFT_REPULSION = 6.0
 NONBONDED_RANGE = 42.0
 
-# Bond parameters
 BOND_SPRING_CONSTANT = 0.32
 BOND_DAMPING = 0.03
 BOND_BREAK_THRESHOLD = 1.9
 BOND_FORCE_CAP = 6.5
 BOND_SOFTSTART_STEPS = 12
 
-# Dipole properties
 DIPOLE_STRENGTH = 0.22
 DIPOLE_VISUAL_SCALE = 18.0
 
-# World / simulation space
 WORLD_WIDTH = 800
 WORLD_HEIGHT = 800
+
 <br><br>
 
 ## How to Run
